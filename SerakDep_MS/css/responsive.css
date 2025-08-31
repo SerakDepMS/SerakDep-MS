@@ -1,0 +1,365 @@
+/* responsive.css - Estilos responsive para SerakDep MS */
+
+/* Tablets en landscape */
+@media screen and (max-width: 1199px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .about-container {
+    gap: 3rem;
+  }
+}
+
+/* Tablets en portrait */
+@media screen and (max-width: 991px) {
+  .section-padding {
+    padding: 4rem 0;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-content {
+    padding-right: 0;
+    order: 2;
+  }
+
+  .about-image {
+    order: 1;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contact-info {
+    padding-right: 0;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Móviles grandes */
+@media screen and (max-width: 767px) {
+  .section-padding {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    flex-direction: column;
+    background-color: #1e3a8a;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.1);
+    padding: 2rem 0;
+    z-index: 999;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .nav-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: center;
+  }
+
+  .nav-toggle.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .nav-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  .nav-link {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    display: block;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* Móviles pequeños */
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .service-card,
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .image-placeholder {
+    height: 300px;
+  }
+}
+
+/* Dispositivos muy pequeños */
+@media screen and (max-width: 400px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .nav-logo {
+    font-size: 1.5rem;
+  }
+
+  .service-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .nav-menu {
+    top: 60px;
+    height: calc(100vh - 60px);
+  }
+}
+
+/* Ajustes para modo landscape en móviles */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 4rem 0;
+  }
+
+  .nav-menu {
+    padding: 1rem 0;
+  }
+}
+
+/* Ajustes para tablets en modo portrait */
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Ajustes para alta densidad de píxeles */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-title {
+    font-weight: 800;
+  }
+
+  .section-title {
+    font-weight: 800;
+  }
+}
+
+/* Modo oscuro preferido - ACTUALIZADO para tema azul */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e293b;
+    color: #ffffff;
+  }
+
+  .navbar {
+    background-color: #1e3a8a;
+  }
+
+  .nav-link {
+    color: #ffffff;
+  }
+
+  .service-card,
+  .project-card,
+  .contact-form {
+    background-color: rgba(30, 41, 59, 0.8);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .section-title,
+  .service-title,
+  .project-title,
+  .contact-info-title,
+  .contact-details h4 {
+    color: #ffffff;
+  }
+
+  .service-description,
+  .project-description,
+  .about-description,
+  .section-subtitle,
+  .contact-details p {
+    color: #e2e8f0;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+/* Impresión */
+@media print {
+  .navbar,
+  .hero-background,
+  .hero-buttons,
+  .footer {
+    display: none;
+  }
+
+  .hero {
+    height: auto;
+    color: #000;
+    background: none;
+  }
+
+  body {
+    color: #000;
+    background: none;
+  }
+
+  .section-padding {
+    padding: 2rem 0;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .btn {
+    border: 1px solid #000;
+    color: #000;
+    background: none;
+  }
+
+  .service-card,
+  .project-card {
+    background: #fff !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+  }
+
+  .section-title,
+  .service-title,
+  .project-title {
+    color: #000 !important;
+  }
+}

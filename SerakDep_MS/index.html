@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, viewport-fit=cover"
+    />
+    <title>SerakDep MS - Soluciones Tecnológicas</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader">
+      <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">SerakDep MS</a>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#inicio" class="nav-link">Inicio</a>
+          <a href="#servicios" class="nav-link">Servicios</a>
+          <a href="#nosotros" class="nav-link">Nosotros</a>
+          <a href="#proyectos" class="nav-link">Proyectos</a>
+          <a href="#contacto" class="nav-link">Contacto</a>
+        </div>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">El futuro es tuyo, no dejes de soñar</h1>
+        <p class="hero-description">
+          Desarrollamos soluciones digitales a medida que impulsan tu empresa
+          hacia el futuro
+        </p>
+        <div class="hero-buttons">
+          <a href="#servicios" class="btn btn-primary">Nuestros servicios</a>
+          <a href="#contacto" class="btn btn-secondary">Contactar ahora</a>
+        </div>
+      </div>
+      <div class="hero-background">
+        <div class="particles-container" id="particles-js"></div>
+      </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="services">
+      <div class="section-header">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <p class="section-subtitle">
+          Soluciones tecnológicas de vanguardia para todos tus proyectos
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="icon-web"></i>
+          </div>
+          <h3 class="service-title">Desarrollo Web</h3>
+          <p class="service-description">
+            Sitios web modernos, responsivos y optimizados para SEO que
+            convierten visitantes en clientes.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="icon-mobile"></i>
+          </div>
+          <h3 class="service-title">Apps Móviles</h3>
+          <p class="service-description">
+            Aplicaciones nativas e híbridas para iOS y Android con interfaces
+            intuitivas y atractivas.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="icon-cloud"></i>
+          </div>
+          <h3 class="service-title">Soluciones Cloud</h3>
+          <p class="service-description">
+            Infraestructura escalable en la nube para garantizar el máximo
+            rendimiento y disponibilidad.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="icon-data"></i>
+          </div>
+          <h3 class="service-title">Análisis de Datos</h3>
+          <p class="service-description">
+            Transformamos tus datos en insights accionables para la toma de
+            decisiones estratégicas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section id="nosotros" class="about">
+      <div class="about-container">
+        <div class="about-content">
+          <h2 class="about-title">¿Quiénes somos?</h2>
+          <p class="about-description">
+            SerakDep MS es una empresa líder en desarrollo de software y
+            soluciones tecnológicas. Con más de 10 años de experiencia, hemos
+            ayudado a cientos de empresas a transformar digitalmente sus
+            negocios.
+          </p>
+          <p class="about-description">
+            Nuestro equipo está formado por profesionales altamente cualificados
+            y apasionados por la tecnología, siempre buscando las mejores
+            soluciones para cada desafío.
+          </p>
+          <div class="stats-container">
+            <div class="stat">
+              <span class="stat-number" data-count="150">0</span>
+              <span class="stat-label">Proyectos completados</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="50">0</span>
+              <span class="stat-label">Clientes satisfechos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="12">0</span>
+              <span class="stat-label">Años de experiencia</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="image-placeholder"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos Section -->
+    <section id="proyectos" class="projects">
+      <div class="section-header">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <p class="section-subtitle">
+          Algunos de nuestros trabajos más recientes
+        </p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image"></div>
+          <div class="project-content">
+            <h3 class="project-title">E-commerce Global</h3>
+            <p class="project-description">
+              Plataforma de comercio electrónico con integración de pasarelas de
+              pago y gestión de inventario.
+            </p>
+            <a href="#" class="project-link">Ver caso de estudio</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image"></div>
+          <div class="project-content">
+            <h3 class="project-title">App de Delivery</h3>
+            <p class="project-description">
+              Aplicación móvil para delivery con seguimiento en tiempo real y
+              sistema de calificaciones.
+            </p>
+            <a href="#" class="project-link">Ver caso de estudio</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image"></div>
+          <div class="project-content">
+            <h3 class="project-title">Sistema ERP</h3>
+            <p class="project-description">
+              Sistema de planificación de recursos empresariales para optimizar
+              procesos internos.
+            </p>
+            <a href="#" class="project-link">Ver caso de estudio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact">
+      <div class="section-header">
+        <h2 class="section-title">Contáctanos</h2>
+        <p class="section-subtitle">
+          Estamos listos para hacer realidad tu proyecto
+        </p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3 class="contact-info-title">Información de contacto</h3>
+          <div class="contact-item">
+            <div class="contact-icon"></div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p>diazmanases1@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"></div>
+            <div class="contact-details">
+              <h4>Teléfono</h4>
+              <p>+57 3116546484</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"></div>
+            <div class="contact-details">
+              <h4>Dirección</h4>
+              <p>Av. Tecnológica 123, Ciudad Digital</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nombre completo"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Correo electrónico"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Asunto"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Tu mensaje"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-title">SerakDep MS</h3>
+            <p class="footer-description">
+              Soluciones tecnológicas innovadoras para impulsar tu negocio hacia
+              el futuro.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Enlaces rápidos</h4>
+            <a href="#inicio" class="footer-link">Inicio</a>
+            <a href="#servicios" class="footer-link">Servicios</a>
+            <a href="#nosotros" class="footer-link">Nosotros</a>
+            <a href="#proyectos" class="footer-link">Proyectos</a>
+            <a href="#contacto" class="footer-link">Contacto</a>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Servicios</h4>
+            <a href="#" class="footer-link">Desarrollo Web</a>
+            <a href="#" class="footer-link">Apps Móviles</a>
+            <a href="#" class="footer-link">Cloud Solutions</a>
+            <a href="#" class="footer-link">Análisis de Datos</a>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-subtitle">Síguenos</h4>
+            <div class="social-links">
+              <a href="#" class="social-link">Facebook</a>
+              <a href="#" class="social-link">Twitter</a>
+              <a href="#" class="social-link">Instagram</a>
+              <a href="#" class="social-link">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 SerakDep MS. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+
+    <!-- Cambié las rutas para que apunten correctamente a la carpeta js/ -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/scroll-effects.js"></script>
+    <script src="js/email.js"></script>
+  </body>
+</html>
