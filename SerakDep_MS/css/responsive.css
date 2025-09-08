@@ -1,4 +1,12 @@
-/* responsive.css - Estilos responsive para SerakDep MS */
+/* responsive.css - Estilos responsive para SerakDep MS - MEJORADO */
+
+/* Contenedor principal para centrar contenido */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
 
 /* Tablets en landscape */
 @media screen and (max-width: 1199px) {
@@ -33,6 +41,7 @@
 
   .about-image {
     order: 1;
+    text-align: center;
   }
 
   .contact-container {
@@ -47,6 +56,14 @@
   .stats-container {
     grid-template-columns: repeat(3, 1fr);
   }
+  
+  /* Añadido: Espaciado lateral para tablets */
+  .services-grid,
+  .projects-grid,
+  .contact-container,
+  .footer-content {
+    padding: 0 1.5rem;
+  }
 }
 
 /* Móviles grandes */
@@ -57,19 +74,26 @@
 
   .section-title {
     font-size: 2rem;
+    text-align: center;
+    padding: 0 1rem;
   }
 
   .hero-title {
     font-size: 2.2rem;
+    text-align: center;
+    padding: 0 1rem;
   }
 
   .hero-description {
     font-size: 1.1rem;
+    text-align: center;
+    padding: 0 1rem;
   }
 
   .hero-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
 
   .nav-menu {
@@ -135,24 +159,49 @@
 
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
   }
 
   .stats-container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 2rem;
+    padding: 0 1rem;
   }
 
   .social-links {
     justify-content: center;
+  }
+  
+  /* Añadido: Espaciado para tarjetas en móviles */
+  .service-card,
+  .project-card {
+    margin: 0 1rem;
+    padding: 1.5rem;
+  }
+  
+  /* Añadido: Centrado de contenido en about */
+  .about-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  /* Añadido: Centrado de estadísticas */
+  .stats-container {
+    justify-items: center;
   }
 }
 
@@ -164,32 +213,47 @@
 
   .hero-title {
     font-size: 1.8rem;
+    padding: 0 0.5rem;
   }
 
   .hero-description {
     font-size: 1rem;
+    padding: 0 0.5rem;
   }
 
   .btn {
     padding: 0.7rem 1.5rem;
     font-size: 0.9rem;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
   }
 
   .section-title {
     font-size: 1.8rem;
+    padding: 0 0.5rem;
   }
 
   .service-card,
   .project-card {
     padding: 1.5rem;
+    margin: 0 0.5rem;
   }
 
   .contact-form {
     padding: 1.5rem;
+    margin: 0 0.5rem;
   }
 
   .image-placeholder {
     height: 300px;
+  }
+  
+  /* Añadido: Ajuste de espaciado en grids */
+  .services-grid,
+  .projects-grid {
+    gap: 1.5rem;
+    padding: 0 0.5rem;
   }
 }
 
@@ -216,6 +280,17 @@
     top: 60px;
     height: calc(100vh - 60px);
   }
+  
+  /* Añadido: Reducir padding en móviles muy pequeños */
+  .container {
+    padding: 0 0.75rem;
+  }
+  
+  .service-card,
+  .project-card {
+    padding: 1rem;
+    margin: 0 0.25rem;
+  }
 }
 
 /* Ajustes para modo landscape en móviles */
@@ -229,6 +304,11 @@
   .nav-menu {
     padding: 1rem 0;
   }
+  
+  /* Añadido: Ajustar padding en landscape */
+  .hero-content {
+    padding: 0 1.5rem;
+  }
 }
 
 /* Ajustes para tablets en modo portrait */
@@ -239,10 +319,20 @@
 
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 1.5rem;
+    gap: 1.5rem;
   }
 
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  /* Añadido: Centrado de contenido en tablets portrait */
+  .section-header {
+    text-align: center;
+    padding: 0 1rem;
   }
 }
 
@@ -361,5 +451,12 @@
   .service-title,
   .project-title {
     color: #000 !important;
+  }
+  
+  /* Añadido: Ajuste para impresión */
+  .container {
+    width: 100%;
+    max-width: none;
+    padding: 0;
   }
 }
